@@ -8,7 +8,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository. Clinic Manager by Alejandro Morales
+Software para la gestion de citas clinicas. Realizado por: Alejandro Morales
 
 ## Requisitos Previos
 
@@ -38,7 +38,7 @@ Antes de comenzar con la instalación y ejecución de la aplicación, asegúrate
 3. Clonar el archivo ```.env.template``` y renombrarlo a ```.env```
 4. Cambiar las variables de entorno
 
-### 5. Modo de Desarrollo
+###  Modo de Desarrollo
 
 - Comando de Docker por primera vez:
 ```docker compose -f docker-compose.dev.yml up --build```
@@ -49,7 +49,8 @@ Antes de comenzar con la instalación y ejecución de la aplicación, asegúrate
 Nota: La bandera ```--build```se utiliza para construir la imagen. Si requieres forzar la reconstruccion de la imagen sin utilizar ninguna capa de cache 
 ```docker-compose -f docker-compose.dev.yml up --build --no-cache```
 
-### 5. Modo de Produccion
+
+###  Modo de Produccion
 
 - Comando de Docker por primera vez:
 ```docker compose -f docker-compose.prod.yml up --build```
@@ -62,7 +63,10 @@ Nota: La bandera ```--build```se utiliza para construir la imagen. Si requieres 
 
 
 
-
+## Ejecutar Seed (Solo Desarollo) - (NO FUNCIONA AUN)
+```
+http://localhost:3000/api/seed
+```
 
 
 
