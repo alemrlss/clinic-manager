@@ -38,7 +38,7 @@ Antes de comenzar con la instalación y ejecución de la aplicación, asegúrate
 3. Clonar el archivo ```.env.template``` y renombrarlo a ```.env```
 4. Cambiar las variables de entorno
 
-###  Modo de Desarrollo
+###  5. Modo de Desarrollo
 
 - Comando de Docker por primera vez:
 ```docker compose -f docker-compose.dev.yml up --build```
@@ -50,7 +50,7 @@ Nota: La bandera ```--build```se utiliza para construir la imagen. Si requieres 
 ```docker-compose -f docker-compose.dev.yml up --build --no-cache```
 
 
-###  Modo de Produccion
+###  5. Modo de Produccion
 
 - Comando de Docker por primera vez:
 ```docker compose -f docker-compose.prod.yml up --build```
@@ -68,5 +68,34 @@ Nota: La bandera ```--build```se utiliza para construir la imagen. Si requieres 
 http://localhost:3000/api/seed
 ```
 
+# Notas adicionales para docker
 
+#### Detener y eliminar contenedores
+Desarrollo
+```
+docker compose -f docker-compose.dev.yml down 
+```
+Produccion
+```
+docker compose -f docker-compose.prod.yml down 
+```
+#### Detener y eliminar contenedores y volumenes
+Desarrollo
+```
+docker compose -f docker-compose.dev.yml down -v
+```
+Produccion
+```
+docker compose -f docker-compose.prod.yml down -v
+```
 
+#### Detener y eliminar contenedores, volumenes e imagenes asociadas
+Desarrollo
+```
+docker-compose -f docker-compose.dev.yml down -v --rmi all
+```
+
+Produccion
+```
+docker-compose -f docker-compose.prod.yml down -v --rmi all
+```
