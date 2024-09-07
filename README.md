@@ -10,37 +10,59 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository. Clinic Manager by Alejandro Morales
 
-## Installation
+## Requisitos Previos
 
-```bash
-$ npm install
-```
+Antes de comenzar con la instalación y ejecución de la aplicación, asegúrate de tener los siguientes requisitos instalados en tu sistema:
 
-## Running the app
+1. **Docker**
+   - **Descripción**: Docker es una plataforma que permite crear, desplegar y ejecutar aplicaciones dentro de contenedores.
+   - **Instalación**: Sigue las instrucciones en la [documentación oficial de Docker](https://docs.docker.com/get-docker/).
 
-```bash
-# development
-$ npm run start
+2. **Docker Compose**
+   - **Descripción**: Docker Compose es una herramienta para definir y ejecutar aplicaciones Docker multi-contenedor.
+   - **Instalación**: Sigue las instrucciones en la [documentación oficial de Docker Compose](https://docs.docker.com/compose/install/).
 
-# watch mode
-$ npm run start:dev
+3. **Node.js y npm (opcional)**
+   - **Descripción**: Aunque Docker se encargará de gestionar las dependencias de Node.js, es posible que necesites Node.js y npm instalados para el desarrollo local y pruebas.
+   - **Instalación**: Puedes descargarlo desde [Node.js](https://nodejs.org/) o usar un gestor de versiones como `nvm`.
 
-# production mode
-$ npm run start:prod
-```
+4. **Git (opcional)**
+   - **Descripción**: Git es una herramienta de control de versiones que se utiliza para clonar el repositorio.
+   - **Instalación**: Sigue las instrucciones en la [documentación oficial de Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-## Test
 
-```bash
-# unit tests
-$ npm run test
+## Clinic Manager - API
 
-# e2e tests
-$ npm run test:e2e
+1. Clonar el Proyecto
+2. ```npm install```
+3. Clonar el archivo ```.env.template``` y renombrarlo a ```.env```
+4. Cambiar las variables de entorno
 
-# test coverage
-$ npm run test:cov
-```
+### 5. Modo de Desarrollo
+
+- Comando de Docker por primera vez:
+```docker compose -f docker-compose.dev.yml up --build```
+
+- Comando de Docker para iniciar la aplicacion 
+```docker compose -f docker-compose.dev.yml up ```
+
+Nota: La bandera ```--build```se utiliza para construir la imagen. Si requieres forzar la reconstruccion de la imagen sin utilizar ninguna capa de cache 
+```docker-compose -f docker-compose.dev.yml up --build --no-cache```
+
+### 5. Modo de Produccion
+
+- Comando de Docker por primera vez:
+```docker compose -f docker-compose.prod.yml up --build```
+
+- Comando de Docker para iniciar la aplicacion 
+```docker compose -f docker-compose.prod.yml up ```
+
+Nota: La bandera ```--build```se utiliza para construir la imagen. Si requieres forzar la reconstruccion de la imagen sin utilizar ninguna capa de cache 
+```docker-compose -f docker-compose.prod.yml up --build --no-cache```
+
+
+
+
 
 
 
