@@ -34,11 +34,10 @@ Antes de comenzar con la instalación y ejecución de la aplicación, asegúrate
 ## Clinic Manager - API
 
 1. Clonar el Proyecto
-2. ```npm install```
-3. Clonar el archivo ```.env.template``` y renombrarlo a ```.env```
-4. Cambiar las variables de entorno
+2. Clonar el archivo ```.env.template``` y renombrarlo a ```.env```
+3. Cambiar las variables de entorno
 
-#####  5. Modo de Desarrollo
+#####  4. Modo de Desarrollo
 
 - Comando de Docker por primera vez:
 ```docker compose -f docker-compose.dev.yml up --build -d```
@@ -51,7 +50,7 @@ Antes de comenzar con la instalación y ejecución de la aplicación, asegúrate
 
 
 
-#####  5. Modo de Produccion
+#####  4. Modo de Produccion
 
 - Comando de Docker por primera vez:
 ```docker compose -f docker-compose.prod.yml up --build```
@@ -67,7 +66,7 @@ La bandera ```--build```se utiliza para construir la imagen. Si requieres forzar
 
 
 
-##### 6. Ejecutar Seed (Solo Desarollo) - (NO FUNCIONA AUN)
+##### 5. Ejecutar Seed (Solo Desarollo) - (NO FUNCIONA AUN)
 ```
 http://localhost:3000/api/seed
 ```
