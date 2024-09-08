@@ -52,10 +52,13 @@ Antes de comenzar con la instalación y ejecución de la aplicación, asegúrate
 ```http://localhost:3000/api/seed```
 
 ## Notas adicionales para docker
+
  ##### La bandera ```--build``` se utiliza para construir la imagen. Si requieres forzar la reconstruccion de la imagen sin utilizar ninguna capa de cache 
+
  #### Forzar la reconstruccion sin utilizar ninguna capa de cache
  Desarrollo
 ```docker-compose -f docker-compose.dev.yml up --build --no-cache -d```
+
 Produccion
 ```docker-compose -f docker-compose.prod.yml up --build --no-cache -d```
 
