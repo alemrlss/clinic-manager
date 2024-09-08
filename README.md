@@ -41,13 +41,14 @@ Antes de comenzar con la instalación y ejecución de la aplicación, asegúrate
 ###  5. Modo de Desarrollo
 
 - Comando de Docker por primera vez:
-```docker compose -f docker-compose.dev.yml up --build```
+```docker compose -f docker-compose.dev.yml up --build -d```
 
 - Comando de Docker para iniciar la aplicacion 
-```docker compose -f docker-compose.dev.yml up ```
+```docker compose -f docker-compose.dev.yml up -d  ```
 
-Nota: La bandera ```--build```se utiliza para construir la imagen. Si requieres forzar la reconstruccion de la imagen sin utilizar ninguna capa de cache 
-```docker-compose -f docker-compose.dev.yml up --build --no-cache```
+ La bandera ```--build``` se utiliza para construir la imagen. Si requieres forzar la reconstruccion de la imagen sin utilizar ninguna capa de cache 
+```docker-compose -f docker-compose.dev.yml up --build --no-cache -d```
+
 
 
 ###  5. Modo de Produccion
@@ -58,12 +59,15 @@ Nota: La bandera ```--build```se utiliza para construir la imagen. Si requieres 
 - Comando de Docker para iniciar la aplicacion 
 ```docker compose -f docker-compose.prod.yml up ```
 
-Nota: La bandera ```--build```se utiliza para construir la imagen. Si requieres forzar la reconstruccion de la imagen sin utilizar ninguna capa de cache 
+La bandera ```--build```se utiliza para construir la imagen. Si requieres forzar la reconstruccion de la imagen sin utilizar ninguna capa de cache 
 ```docker-compose -f docker-compose.prod.yml up --build --no-cache```
 
 
+##### Nota: La bandera ```-d``` se utiliza para para el "detached mode" (modo desacoplado o en segundo plano)
 
-## Ejecutar Seed (Solo Desarollo) - (NO FUNCIONA AUN)
+
+
+## 6. Ejecutar Seed (Solo Desarollo) - (NO FUNCIONA AUN)
 ```
 http://localhost:3000/api/seed
 ```
