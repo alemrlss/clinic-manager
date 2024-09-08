@@ -65,12 +65,14 @@ Produccion
 #### Detener y eliminar contenedores
 Desarrollo
 ```docker compose -f docker-compose.dev.yml down ```
+
 Produccion
 ```docker compose -f docker-compose.prod.yml down ```
 
 #### Detener y eliminar contenedores y volumenes
 Desarrollo
 ```docker compose -f docker-compose.dev.yml down -v```
+
 Produccion
 ```docker compose -f docker-compose.prod.yml down -v```
 
