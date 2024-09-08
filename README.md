@@ -14,19 +14,19 @@ Software para la gestion de citas clinicas. Realizado por: Alejandro Morales
 
 Antes de comenzar con la instalación y ejecución de la aplicación, asegúrate de tener los siguientes requisitos instalados en tu sistema:
 
-1. **Docker**
+1/4. **Docker**
    - **Descripción**: Docker es una plataforma que permite crear, desplegar y ejecutar aplicaciones dentro de contenedores.
    - **Instalación**: Sigue las instrucciones en la [documentación oficial de Docker](https://docs.docker.com/get-docker/).
 
-2. **Docker Compose**
+2/4. **Docker Compose**
    - **Descripción**: Docker Compose es una herramienta para definir y ejecutar aplicaciones Docker multi-contenedor.
    - **Instalación**: Sigue las instrucciones en la [documentación oficial de Docker Compose](https://docs.docker.com/compose/install/).
 
-3. **Node.js y npm (opcional)**
+3/4. **Node.js y npm (opcional)**
    - **Descripción**: Aunque Docker se encargará de gestionar las dependencias de Node.js, es posible que necesites Node.js y npm instalados para el desarrollo local y pruebas.
    - **Instalación**: Puedes descargarlo desde [Node.js](https://nodejs.org/) o usar un gestor de versiones como `nvm`.
 
-4. **Git (opcional)**
+4/4. **Git (opcional)**
    - **Descripción**: Git es una herramienta de control de versiones que se utiliza para clonar el repositorio.
    - **Instalación**: Sigue las instrucciones en la [documentación oficial de Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
@@ -38,7 +38,7 @@ Antes de comenzar con la instalación y ejecución de la aplicación, asegúrate
 3. Clonar el archivo ```.env.template``` y renombrarlo a ```.env```
 4. Cambiar las variables de entorno
 
-###  5. Modo de Desarrollo
+#####  5. Modo de Desarrollo
 
 - Comando de Docker por primera vez:
 ```docker compose -f docker-compose.dev.yml up --build -d```
@@ -51,7 +51,7 @@ Antes de comenzar con la instalación y ejecución de la aplicación, asegúrate
 
 
 
-###  5. Modo de Produccion
+#####  5. Modo de Produccion
 
 - Comando de Docker por primera vez:
 ```docker compose -f docker-compose.prod.yml up --build```
@@ -67,12 +67,12 @@ La bandera ```--build```se utiliza para construir la imagen. Si requieres forzar
 
 
 
-## 6. Ejecutar Seed (Solo Desarollo) - (NO FUNCIONA AUN)
+##### 6. Ejecutar Seed (Solo Desarollo) - (NO FUNCIONA AUN)
 ```
 http://localhost:3000/api/seed
 ```
 
-# Notas adicionales para docker
+## Notas adicionales para docker
 
 #### Detener y eliminar contenedores
 Desarrollo
