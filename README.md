@@ -55,28 +55,28 @@ Antes de comenzar con la instalación y ejecución de la aplicación, asegúrate
 
  ##### La bandera ```--build``` se utiliza para construir la imagen. Si requieres forzar la reconstruccion de la imagen sin utilizar ninguna capa de cache 
 
- #### Forzar la reconstruccion sin utilizar ninguna capa de cache
+ ### Forzar la reconstruccion sin utilizar ninguna capa de cache
  Desarrollo
 ```docker-compose -f docker-compose.dev.yml up --build --no-cache -d```
 
 Produccion
 ```docker-compose -f docker-compose.prod.yml up --build --no-cache -d```
 
-#### Detener y eliminar contenedores
+### Detener y eliminar contenedores
 Desarrollo
 ```docker compose -f docker-compose.dev.yml down ```
 
 Produccion
 ```docker compose -f docker-compose.prod.yml down ```
 
-#### Detener y eliminar contenedores y volumenes
+### Detener y eliminar contenedores y volumenes
 Desarrollo
 ```docker compose -f docker-compose.dev.yml down -v```
 
 Produccion
 ```docker compose -f docker-compose.prod.yml down -v```
 
-#### Detener y eliminar contenedores, volumenes e imagenes asociadas
+### Detener y eliminar contenedores, volumenes e imagenes asociadas
 Desarrollo
 ```docker-compose -f docker-compose.dev.yml down -v --rmi all```
 
