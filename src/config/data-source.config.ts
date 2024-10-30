@@ -13,6 +13,6 @@ export function getDataSourceConfig(
     password: configService.get('DB_PASSWORD') || 'secret',
     database: configService.get('DB_NAME') || 'db-public',
     entities: [], // Incluye tus entidades aquí
-    synchronize: true, // ¡Cuidado con esto en producción!
+    synchronize: false, // ¡Cuidado con esto en producción!
   };
 }
